@@ -1,0 +1,7 @@
+# Copy to backend.hcl and fill in your state storage account.
+# terraform init -backend-config=backend.hcl
+resource_group_name  = "rg-tfstate"
+storage_account_name = "sttfstateCHANGEME"
+container_name       = "tfstate"
+key                  = "platform/prod.tfstate"
+use_azuread_auth     = true
